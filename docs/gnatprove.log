@@ -1,0 +1,353 @@
+Phase 1 of 3: generation of data representation information ...
+Phase 2 of 3: generation of Global contracts ...
+Phase 3 of 3: flow analysis and proof ...
+Success: all checks proved (107 checks).
+Summary logged in C:\Users\4rchura\Documents\QEDchain\obj\gnatprove\gnatprove.out
+ info: unrolling loop [info-unrolling-inlining]
+--> chainguard-chain.adb:9:23
+
+ info: range check proved
+--> chainguard-chain.adb:10:61
+
+ info: postcondition proved
+--> chainguard-chain.adb:20:16
+
+ info: index check proved
+--> chainguard-chain.adb:20:57
+
+ info: range check proved
+--> chainguard-chain.adb:20:78
+
+ info: loop invariant initialization proved
+--> chainguard-chain.adb:25:13
+
+ info: loop invariant preservation proved
+--> chainguard-chain.adb:25:13
+
+ info: index check proved
+--> chainguard-chain.adb:25:50
+
+ info: range check proved
+--> chainguard-chain.adb:25:71
+
+ info: assertion proved
+--> chainguard-chain.adb:27:28
+
+ info: index check proved
+--> chainguard-chain.adb:27:52
+
+ info: index check proved
+--> chainguard-chain.adb:27:68
+
+ info: assertion proved
+--> chainguard-chain.adb:29:25
+
+ info: index check proved
+--> chainguard-chain.adb:29:35
+
+ info: range check proved
+--> chainguard-chain.adb:29:56
+
+ info: initialization of "B" proved
+--> chainguard-chain.adb:34:07
+
+ info: precondition proved
+--> chainguard-chain.adb:36:07
+
+ info: index check proved
+--> chainguard-chain.adb:39:36
+
+ info: index check proved
+--> chainguard-chain.adb:43:26
+
+ info: range check proved
+--> chainguard-chain.adb:44:28
+
+ info: range check proved
+--> chainguard-chain.ads:13:07
+
+ info: implicit aspect Always_Terminates on "Compute_Block_Hash" has been proved, subprogram will terminate
+--> chainguard-chain.ads:17:13
+
+ info: data dependencies proved
+--> chainguard-chain.ads:19:11
+
+ info: implicit aspect Always_Terminates on "Block_Valid" has been proved, subprogram will terminate
+--> chainguard-chain.ads:20:13
+
+ info: implicit aspect Always_Terminates on "Link_Valid" has been proved, subprogram will terminate
+--> chainguard-chain.ads:22:13
+
+ info: implicit aspect Always_Terminates on "Genesis_Valid" has been proved, subprogram will terminate
+--> chainguard-chain.ads:25:13
+
+ info: implicit aspect Always_Terminates on "Chain_Valid" has been proved, subprogram will terminate
+--> chainguard-chain.ads:27:13
+
+ info: index check proved
+--> chainguard-chain.ads:29:35
+
+ info: index check proved
+--> chainguard-chain.ads:30:65
+
+ info: index check proved
+--> chainguard-chain.ads:30:81
+
+ info: postcondition proved
+--> chainguard-chain.ads:35:19
+
+ info: index check proved
+--> chainguard-chain.ads:36:67
+
+ info: index check proved
+--> chainguard-chain.ads:36:86
+
+ info: postcondition proved
+--> chainguard-chain.ads:49:16
+ info: range check proved
+--> chainguard-sampling.adb:16:65
+
+ info: division check proved
+--> chainguard-sampling.adb:19:44
+
+ info: range check proved
+--> chainguard-sampling.adb:19:44
+
+ info: implicit aspect Always_Terminates on "Next_State" has been proved, subprogram will terminate
+--> chainguard-sampling.ads:6:13
+
+ info: implicit aspect Always_Terminates on "Output" has been proved, subprogram will terminate
+--> chainguard-sampling.ads:7:13
+
+ info: initialization of "Start" proved
+--> chainguard-sampling.ads:10:07
+
+ info: postcondition proved
+--> chainguard-sampling.ads:12:19
+
+ info: division check proved
+--> chainguard-sampling.ads:15:30
+
+ info: range check proved
+--> chainguard-sampling.ads:15:69
+ info: local subprogram "Compress" only analyzed in the context of calls [info-unrolling-inlining]
+--> chainguard-sha256.adb:23:14
+      + add a contract to analyze it separately from calling contexts
+
+ info: initialization of "S0" proved
+--> chainguard-sha256.adb:29:07
+
+ info: initialization of "S0" proved, in call inlined at chainguard-sha256.adb:63
+--> chainguard-sha256.adb:29:07
+
+ info: initialization of "S1" proved
+--> chainguard-sha256.adb:29:11
+
+ info: initialization of "S1" proved, in call inlined at chainguard-sha256.adb:63
+--> chainguard-sha256.adb:29:11
+
+ info: initialization of "T1" proved
+--> chainguard-sha256.adb:29:15
+
+ info: initialization of "T1" proved, in call inlined at chainguard-sha256.adb:63
+--> chainguard-sha256.adb:29:15
+
+ info: initialization of "T2" proved
+--> chainguard-sha256.adb:29:19
+
+ info: initialization of "T2" proved, in call inlined at chainguard-sha256.adb:63
+--> chainguard-sha256.adb:29:19
+
+ info: postcondition proved
+--> chainguard-sha256.adb:57:19
+
+ info: division check proved
+--> chainguard-sha256.adb:57:45
+
+ info: analyzing call to "Compress" in context
+--> chainguard-sha256.adb:63:10
+
+ info: in inlined body at line 31
+--> chainguard-sha256.adb:63:10
+      + unrolling loop [info-unrolling-inlining]
+
+ info: in inlined body at line 37
+--> chainguard-sha256.adb:63:10
+      + cannot unroll loop (too many loop iterations) [info-unrolling-inlining]
+
+ info: in inlined body at line 44
+--> chainguard-sha256.adb:63:10
+      + cannot unroll loop (too many loop iterations) [info-unrolling-inlining]
+
+ info: non-aliasing of formal parameters "H" and "Data" proved
+--> chainguard-sha256.adb:63:21
+
+ info: range check proved
+--> chainguard-sha256.adb:66:27
+
+ info: loop invariant initialization proved
+--> chainguard-sha256.adb:78:33
+
+ info: loop invariant preservation proved
+--> chainguard-sha256.adb:78:33
+
+ info: range check proved
+--> chainguard-sha256.adb:81:26
+
+ info: range check proved
+--> chainguard-sha256.adb:81:40
+
+ info: range check proved
+--> chainguard-sha256.adb:86:41
+
+ info: loop invariant initialization proved
+--> chainguard-sha256.adb:92:36
+
+ info: loop invariant preservation proved
+--> chainguard-sha256.adb:92:36
+
+ info: loop variant proved
+--> chainguard-sha256.adb:93:34
+
+ info: loop invariant initialization proved
+--> chainguard-sha256.adb:98:33
+
+ info: loop invariant preservation proved
+--> chainguard-sha256.adb:98:33
+
+ info: loop variant proved
+--> chainguard-sha256.adb:99:31
+
+ info: unrolling loop [info-unrolling-inlining]
+--> chainguard-sha256.adb:102:23
+
+ info: range check proved
+--> chainguard-sha256.adb:103:60
+
+ info: unrolling loop [info-unrolling-inlining]
+--> chainguard-sha256.adb:105:23
+
+ info: unrolling loop [info-unrolling-inlining]
+--> chainguard-sha256.adb:106:26
+
+ info: range check proved
+--> chainguard-sha256.adb:108:59
+
+ info: initialization of "C" proved
+--> chainguard-sha256.adb:115:07
+
+ info: precondition proved
+--> chainguard-sha256.adb:118:07
+
+ info: implicit aspect Always_Terminates on "Bytes_Processed" has been proved, subprogram will terminate
+--> chainguard-sha256.ads:6:13
+
+ info: initialization of "C" proved
+--> chainguard-sha256.ads:7:26
+
+ info: postcondition proved
+--> chainguard-sha256.ads:8:19
+
+ info: range check proved
+--> chainguard-sha256.ads:10:30
+
+ info: postcondition proved
+--> chainguard-sha256.ads:11:19
+
+ info: range check proved
+--> chainguard-sha256.ads:11:79
+
+ info: implicit aspect Always_Terminates on "Finish" has been proved, subprogram will terminate
+--> chainguard-sha256.ads:12:13
+
+ info: implicit aspect Always_Terminates on "Digest" has been proved, subprogram will terminate
+--> chainguard-sha256.ads:13:13
+ info: index check proved
+--> chainguard-verify.adb:10:42
+
+ info: index check proved
+--> chainguard-verify.adb:13:46
+
+ info: loop invariant initialization proved
+--> chainguard-verify.adb:18:13
+
+ info: loop invariant preservation proved
+--> chainguard-verify.adb:18:13
+
+ info: overflow check proved
+--> chainguard-verify.adb:19:43
+
+ info: index check proved
+--> chainguard-verify.adb:19:43
+
+ info: overflow check proved
+--> chainguard-verify.adb:19:65
+
+ info: overflow check proved
+--> chainguard-verify.adb:19:69
+
+ info: index check proved
+--> chainguard-verify.adb:19:69
+
+ info: overflow check proved
+--> chainguard-verify.adb:20:46
+
+ info: index check proved
+--> chainguard-verify.adb:20:46
+
+ info: overflow check proved
+--> chainguard-verify.adb:20:68
+
+ info: overflow check proved
+--> chainguard-verify.adb:20:72
+
+ info: index check proved
+--> chainguard-verify.adb:20:72
+
+ info: precondition proved
+--> chainguard-verify.adb:32:14
+
+ info: implicit aspect Always_Terminates on "Verify_Link" has been proved, subprogram will terminate
+--> chainguard-verify.ads:4:13
+
+ info: postcondition proved
+--> chainguard-verify.ads:5:19
+
+ info: implicit aspect Always_Terminates on "Segment_Valid" has been proved, subprogram will terminate
+--> chainguard-verify.ads:8:13
+
+ info: index check proved
+--> chainguard-verify.ads:11:56
+
+ info: index check proved
+--> chainguard-verify.ads:12:47
+
+ info: overflow check proved
+--> chainguard-verify.ads:14:43
+
+ info: index check proved
+--> chainguard-verify.ads:14:43
+
+ info: overflow check proved
+--> chainguard-verify.ads:14:65
+
+ info: overflow check proved
+--> chainguard-verify.ads:14:69
+
+ info: index check proved
+--> chainguard-verify.ads:14:69
+
+ info: implicit aspect Always_Terminates on "Verify_Segment" has been proved, subprogram will terminate
+--> chainguard-verify.ads:18:13
+
+ info: postcondition proved
+--> chainguard-verify.ads:22:16
+
+ info: precondition proved
+--> chainguard-verify.ads:22:40
+
+ info: implicit aspect Always_Terminates on "Verify_Chain" has been proved, subprogram will terminate
+--> chainguard-verify.ads:23:13
+
+ info: postcondition proved
+--> chainguard-verify.ads:24:19

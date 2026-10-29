@@ -1,0 +1,12 @@
+name = "chainguard"
+description = "Fixed-capacity SPARK hash chains"
+version = "0.1.0-dev"
+authors = ["ChainGuard contributors"]
+licenses = "MIT"
+executables = ["chainguard", "test_runner"]
+project-files = ["chainguard.gpr"]
+
+[[depends-on]]
+gnatprove = "=16.1.0"
+gnat = "=16.1.0"
+gprbuild = "=26.0.1"

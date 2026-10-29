@@ -1,0 +1,8 @@
+.ai/
+alire/
+config/
+bin/
+obj/
+proof/
+docs/gnatprove.*.log
+demo/
