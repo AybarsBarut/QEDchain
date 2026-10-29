@@ -1,6 +1,6 @@
 # ChainGuard proof report
 
-Generated (UTC): 2026-10-29 08:44:51Z
+Generated (UTC): 2026-10-29 08:52:51Z
 
 Command: `alr -n exec -- gnatprove -P chainguard.gpr -u chainguard-chain.adb chainguard-chain.ads chainguard-sampling.adb chainguard-sampling.ads chainguard-sha256.adb chainguard-sha256.ads chainguard-types.ads chainguard-verify.adb chainguard-verify.ads chainguard.ads --level=2 --mode=all --report=all --checks-as-errors=on`
 

@@ -1,8 +1,28 @@
-.ai/
-alire/
-config/
-bin/
-obj/
-proof/
-docs/gnatprove.*.log
-demo/
+# Local project context
+/.ai/
+
+# Generated dependencies, configuration and build/proof output
+/alire/
+/config/
+/bin/
+/obj/
+/proof/
+/demo/
+
+# Runtime logs and temporary files
+*.log
+*.tmp
+*.swp
+*~
+
+# Local editor and operating-system files
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local environment secrets; example configuration may be committed
+.env
+.env.*
+!.env.example

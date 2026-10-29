@@ -72,7 +72,7 @@ Total                           107    28 (26%)                              79 
 ```
 <!-- proof-summary:end -->
 
-The full [proof report](docs/PROOF_REPORT.md) includes the exact command, tool versions, source fingerprints, residual checks, and detailed GNATprove output. [gnatprove.log](docs/gnatprove.log) records the process output. Re-running the proof updates both this section and the report.
+The full [proof report](docs/PROOF_REPORT.md) includes the exact command, tool versions, source fingerprints, residual checks, and detailed GNATprove output. The proof script also writes a local `docs/gnatprove.log` for diagnostics; raw logs are excluded from version control. Re-running the proof updates both this section and the report.
 
 The [local validation record](docs/VALIDATION.md) links the successful PowerShell 5.1 fresh-copy and PowerShell 7 runs.
 
